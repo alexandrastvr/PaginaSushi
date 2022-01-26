@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: #070e14;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    line-height:20px;
+    word-spacing: 2px;
+}
+
+
+/* HEADER*/
+.header{
+   background-image: url('headerbg1.png');
+   background-position: top right;
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 200px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-end;
+   border-bottom: 4px dotted #F8210C;
+}
+
+.meniu{
+  font-family: 'Oswald', sans-serif;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+.meniu span{
+    
+    margin: 0px 20px;
+}
+.item{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.meniu img{
+    width: 80px;
+}
+
+@media screen and (max-width:400px){
+    .header {
+        height: 200px;
+    }
+    .meniu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .meniu span {
+      margin: 5px;
+    }
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #9ABCBE;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2{
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+.footer p{
+    text-align: center;
+    margin: 10px;
+}
+.formular{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+.divemail{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.divnume{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.acord{
+    margin-bottom: 20px;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+  }
+
+  input[type=email], select {
+    
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+  }
+
+  input[type=submit] {
+    
+    background-color: #F8210C;
+    font-family: 'ABeeZee', sans-serif;
+    color: white;
+    padding: 14px 25px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  /* CINTENT*/
+
+  .meniufood{
+    border-radius: 15px;
+    background-image: url('bgmeniu2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 5%;
+  }
+
+  .sushi{
+      border: 1px solid rgb(24, 23, 23);
+      border: 1px solid rgb(54, 52, 52);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px;
+  }
+
+  .bauturi{
+      border: 1px solid rgb(24, 23, 23);
+      border: 1px solid rgb(54, 52, 52);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px;
+  }
+  table{
+      border: 2px solid rgb(24, 23, 23);
+      border-radius: 4px;
+      padding: 20px;
+  }
+  table th{
+      font-family: 'ABeeZee', sans-serif;
+      height: 50px;
+      font-size: 20px;
+      text-align: left;
+  }
+  .headermic{
+    font-family: 'Oswald', sans-serif;
+      color: #e9574a;
+      font-size: 15px;
+      font-weight: 200;
+  }
+
+  .poze{
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin: 20px;
+  }
+ .poze img{
+      width: 80%;
+      border-radius: 50%;
+      border: 5px double rgb(54, 52, 52);
+  }
+  .maki{
+    align-self:flex-start;
+  }
+  .rolls{
+    align-self: flex-end;
+    }
+    .naghiri{
+    align-self:flex-start;
+    }
+
+    @media screen and (max-width:1160px){
+        .poze{
+            width: 75%;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-evenly;
+        }
+        img{
+            width: 30%;
+            margin: 2%;
+        }
+        .maki{
+            justify-self: flex-end;
+          }
+          .rolls{
+            justify-self: flex-start;
+            }
+            .naghiri{
+                justify-self: flex-end;
+            }
+    }
+
+    @media screen and (max-width:450px){
+        *{
+            font-size: 13px;
+            line-height:17px;
+            word-spacing: 1px; 
+        }
+        table th{
+            height: 40px;
+            font-size: 18px;
+            text-align: left;
+        }
+        .headermic{
+            color: #e9574a;
+            font-size: 13px;
+            font-weight: 200;
+        }
+        .meniufood{
+            padding: 10px;
+        }
+        table{
+            padding: 10px;
+        }
+    }

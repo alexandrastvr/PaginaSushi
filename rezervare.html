@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervare</title>
+    <link rel="stylesheet" type="text/css" href="rezerv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="meniu">
+          <img src="Logofalb.png">
+          <span><a class="item" href="index.html">Acasa</a></span>
+          <span><a class="item" href="meniu.html">Meniu</a></span>
+          <span><a class="item" href="rezervare.html">Rezervare</a></span>
+        </div>
+      </div>
+
+      <div class="formRez">
+        <div class="textRez">
+          <h2>Rezerva o masa!</h2>
+          <p>Completeaza formularul urmator pentru a face o rezervare si te vom contacta telefonic!</p>
+        </div>
+        
+        <div class="date">
+          <div class="datePers">
+            <label for="numeRez" id="labelNume" class="labelRez">Nume:</label>
+            <input class="inputRez" type="text" placeholder="Nume..." name="numeRez" id="inputPrenume">
+            <label class="labelRez" for="prenume" id="labelPrenume">Prenume:</label>
+            <input class="inputRez" type="text" placeholder="Prenume..." name="prenume" id="inputPrenume">
+            <label class="labelRez" for="emailrez" id="labelEmail">Email:</label>
+            <input class="inputRez" type="email" placeholder="email@gmail.com" name="emailrez" id="inputEmail">
+            <label class="labelRez" for="telefon" id="labelTelefon">Nr. telefon:</label>
+            <input class="inputRez" type="tel" placeholder="07XXXXXXXXXX" name="telefon" id="inputTelefon">
+         </div>
+         <div class="dateRez">
+            <label class="labelRez" for="data" id="labelData">Data:</label>
+            <input class="inputRez" type="date" name="data" id="inputData">
+            <label class="labelRez" for="appt">Ora:</label>
+            <input class="inputRez" type="time" id="appt" name="appt">
+            <label class="labelRez" for="nrPers" id="labelNrPers">Nr. persoane:</label>
+            <input class="inputRez" type="number" placeholder="2" name="nrPers" id="inputNumar" min="1" max="10">
+            <label class="labelRez" for="mesaj" id="labelTelefon">Mesaj:</label>
+            <textarea class="inputRez" rows="5" name="mesaj" id="inputMesaj">Daca aveti ceva de adaugat...</textarea>
+          </div>
+        </div>
+        <input type="submit" id="rezBtn" value="Rezerva!">
+      </div>
+      <div class="footer">
+    
+        <h2>Aboneaza-te la newsletter!</h2>
+      <p>Aboneaza-te la newsletter-ul Nana Sushi pentru a fi pus la curent cu noile oferte si evenimentele urmatoare!</p>
+      <div class="formular">
+        <div class="divemail">
+          <label class="emailLabel" for="email">E-mail:</label>
+          <input class="email" type="email" name="email" placeholder="email@gmail.com">
+        </div>
+        
+          <div class="divnume">
+            <label class="numeLabel" for="nume">Nume:</label>
+            <input class="nume" type="text" name="nume" placeholder="Numele tau...">
+          </div>
+        
+      </div>
+        <div class="acord">
+          <input type="checkbox" id="acord" name="acord">
+          <label for="acord">Sunt de acord sa primesc notificari</label>
+        </div>
+        <input type="submit" value="Aboneaza-ma!">
+      </div>
+</body>
+</html>

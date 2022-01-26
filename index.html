@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" type="text/CSS" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0dacf17067.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="meniu">
+      <img src="Logofalb.png">
+      <span><a class="item" href="index.html">Acasa</a></span>
+      <span><a class="item" href="meniu.html">Meniu</a></span>
+      <span><a class="item" href="rezervare.html">Rezervare</a></span>
+    </div>
+  </div>
+  
+  
+    <div class="content" id="content">
+      <div class="descriere bula">
+        <div class="text">
+          <div class="text2">
+            <h3>Bucataria japoneza</h3>
+            <p>Calatoreste in timp si spatiu delectandu-te cu un 
+              preparat originar din Asia de Sud-Est, cunoscut ca 
+              nare-zushi ("peste sarat"), popularizat inca din 
+              perioada Edo a marilor daimyo.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="livrari bula">
+        <div class="text">
+          <div class="text2">
+            <h3>Livrari</h3>
+            
+            <p>Pentru a trimite o comanda, suna la 0722222322 sau trimite un SMS!</p>
+            <p>Program: Luni-Vineri: 9:00 - 21:00</p>
+            <p>Sambata-Duminica: 11:00 - 23:00</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact bula">
+        <div class="text">
+          <div class="text2">
+            <h3>Contact</h3>
+            
+            <p>Ne gasiti la adresa:</p>
+            <p>Str. Florilor nr. 15, sect.2, Bucuresti</p>
+            <p>Telefon: 0722222322/ 0746555555</p>
+            <p>Program: Luni - Vineri: 10:00 - 22:00</p>
+            <p>Sambata - Duminica: 12:00 - 24:00</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="eveniment bula">
+        <div class="text">
+          <div class="text2">
+            <h3>Urmatorul eveniment:</h3>
+            <p>Urmatorul eveniment, "Seara cu sake", va avea loc pe data de 16 nov, 2021, in incinta locatiei de pe Str. Florilor. Audiaza un recital deosebit de sitar bucurandu-te de nagiri si sake!</p> 
+            <p>Pret bilet: 120RON</p>
+            <p>Nu iti uita kimono-ul! </p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="socialMedia" id="socialMed">
+        <p>Ne gasesti si pe social media:</p>
+        <br>
+        <ul>
+          <li><a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i>Faceboox</a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+
+  <div class="footer">
+    
+      <h2>Aboneaza-te la newsletter!</h2>
+    <p>Aboneaza-te la newsletter-ul Nana Sushi pentru a fi pus la curent cu noile oferte si evenimentele urmatoare!</p>
+    <div class="formular">
+      <div class="divemail">
+        <label class="emailLabel" for="email">E-mail:</label>
+        <input class="email" type="email" name="email" placeholder="email@gmail.com">
+      </div>
+      
+        <div class="divnume">
+          <label class="numeLabel" for="nume">Nume:</label>
+          <input class="nume" type="text" name="nume" placeholder="Numele tau...">
+        </div>
+      
+    </div>
+      <div class="acord">
+        <input type="checkbox" id="acord" name="acord">
+        <label for="acord">Sunt de acord sa primesc notificari</label>
+      </div>
+
+      <input type="submit" value="Aboneaza-ma!">
+    </div>
+    
+  <script>
+    let social = document.getElementById("socialMed");
+    let content = document.getElementById("content");
+    let classes = ['fab', 'fa-facebook-f', 'fa-instagram'];
+    let linkSocial = ['https://www.facebook.com/', 'https://www.instagram.com/'];
+    console.log(social);
+    if(screen.width <= 500){
+      social.remove();
+      const newSocial = document.createElement('ul');
+      newSocial.style.position = 'absolute';
+      newSocial.style.right = '10px';
+      newSocial.style.top = '220px';
+      content.appendChild(newSocial);
+      for(let i = 0; i < 2; i++){
+        let li = document.createElement('li');
+        li.style.listStyleType = 'none';
+        newSocial.appendChild(li);
+        let links = document.createElement('a');
+        links.style.href = linkSocial[i];
+        links.style.margin = '7px';
+        li.appendChild(links);
+        let icon = document.createElement('i');
+        li.appendChild(icon);
+        links.classList.add(classes[0], classes[i+1]);
+      }
+
+    }
+  </script>
+ 
+</body>
+</html>
+

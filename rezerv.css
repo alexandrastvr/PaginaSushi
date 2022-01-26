@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #070e14;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* HEADER*/
+.header{
+    background-image: url('headerbg1.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 4px dotted #F8210C;
+ }
+ 
+ .meniu{
+    font-family: 'Oswald', sans-serif;
+   margin: 10px;
+   display: flex;
+   align-items: flex-end;
+   color: white;
+ }
+ .meniu span{
+     
+     margin: 0px 20px;
+ }
+ .item{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 600;
+     letter-spacing: 3px;
+ }
+ .meniu img{
+     width: 80px;
+ }
+
+ @media screen and (max-width:400px){
+    .header {
+        height: 200px;
+    }
+    .meniu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .meniu span {
+      margin: 5px;
+    }
+}
+ 
+ /*FOOTER*/
+ .footer{
+     background-color: #9ABCBE;
+     color: black;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .footer h2{
+     font-family: 'ABeeZee', sans-serif;
+     text-align: center;
+     margin: 20px 0px 20px 0px;
+ }
+ .footer p{
+     text-align: center;
+     margin: 10px;
+ }
+ .formular{
+     display: flex;
+     flex-direction: column;
+     margin: 0px 0px 0px 0px;
+     padding: 10px;
+ }
+ .divemail{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin: 5px;
+ }
+ .divnume{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin: 5px;
+ }
+ 
+ .acord{
+     margin-bottom: 20px;
+ }
+ 
+ 
+
+  textarea, input[type=text],input[type=number], input[type=date], input[type=tel], input[type=time], input[type=email], select {
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+  }
+  
+   input[type=submit] {
+     
+     background-color: #F8210C;
+     font-family: 'ABeeZee', sans-serif;
+     font-size: 13px;
+     height: 40px;
+     color: white;
+     padding: 14px 25px;
+     margin: 5px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+   }
+
+   /*CONTENT*/
+
+   .formRez{
+       box-sizing: border-box;
+       width: 850px;
+       margin: 20px auto 20px auto;
+       background-color: #5b7172;
+       background-image: url('bgmeniu2.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       border-radius: 20px;
+       color: white;
+       height: 450px;
+       padding: 50px 10px 50px 10px;
+       display: grid;
+       grid-template-rows: 20% 30% 20% 30%;
+       grid-template-columns: 85% 15%;
+   }
+   .formRez h2{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+   }
+   .formRez p{
+       font-size: 15px;
+       letter-spacing: 1px;
+       margin: 20px auto 20px auto;
+   }
+   .textRez{
+       grid-row: 1/2;
+       grid-column: 1/-1;
+       text-align: center;
+   }
+   .date{
+       grid-column: 1/2;
+       grid-row: 2/-1;
+       display: flex;
+   }
+   .datePers, .dateRez{
+       width: 50%;
+       display: grid;
+       grid-template-columns: 20% 80%;
+       grid-template-rows: 25% 25% 25% 25%;
+   }
+   #rezBtn{
+      grid-column: -2/-1;
+      grid-row: 3/4;
+      width: 120px;
+      align-self: center;
+      justify-self: center;
+      margin-top: 20px;
+   }
+  .labelRez {
+       align-self: center;
+       justify-self: end;
+       color: whitesmoke;
+       font-size: 15px;
+   }
+   .inputRez{
+       height: 30px;
+       align-self: center;
+       justify-self: center;
+   }
+   #inputMesaj{
+       height: 50px;
+   }
+
+   @media screen and (max-width:850px){
+       .formRez{
+           display: flex;
+           flex-direction: column;
+       }
+   }
+
+   @media screen and (max-width:450px){
+       .formRez{
+        width: 300px;
+        height: unset;
+       }
+       .date{
+           grid-column: unset;
+           grid-row: unset;
+           flex-direction: column;
+       }
+       .datePers, .dateRez{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+   }
